@@ -7,16 +7,11 @@
 ### 本地运行
 
 1. 安装相关依赖（requirements.txt）
-1. 修改配置文件（config.toml）
-1. 启动自动签到（main.py）
-1. 获取结束截图（end文件夹中）
-
-### 定时运行
-
-1. 安装相关依赖（requirements.txt）
 2. 修改配置文件（config.toml）
-3. 启动自动签到（**main-scheduled.py**）
-4. 获取结束截图（end文件夹中）
+3.修改邮箱配置（main.py）
+4. 启动自动签到（main.py）
+
+
 
 
 
@@ -25,7 +20,6 @@
 ```txt
 |   config.toml
 |   config.toml.demo
-|   main-scheduled.py
 |   main.py
 |   profile.toml
 |   README.md
@@ -50,11 +44,13 @@
 openid="oO-xxxxxxxxxxxxxxxxx"
 nid=""     # optional
 cardNo=""  # optional
+email=""  # optional
 
 [user.yyy]
 openid="oO-xxxxxxxxxxxxxxxxx"
 nid=""     # optional
 cardNo=""  # optional
+email=""  # optional
 
 ```
 
@@ -62,6 +58,7 @@ cardNo=""  # optional
 - openid：[必须]用户登录凭据，可以通过抓包获取
 - nid：非必要，可以为空，只要你之前在微信上登录过
 - cardNo：非必要，可以为空，只要你之前在微信上登录过
+- email：非必要，用于发送通知
 
 
 
@@ -69,9 +66,7 @@ cardNo=""  # optional
 
 - 立即执行的脚本
 
-### main-scheduled.py
 
-- 定时执行，时间在周一早上八点左右
 
 
 
