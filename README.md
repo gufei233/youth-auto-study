@@ -8,7 +8,7 @@
 
 1. 安装相关依赖（requirements.txt）
 2. 修改配置文件（config.toml）
-3.修改邮箱配置（main.py）
+3. 修改邮箱配置（main.py）
 4. 启动自动签到（main.py）
 
 
